@@ -618,17 +618,18 @@ ul, a{
 
 /* =========== PHONE SIZE ================== */
 @media screen and (max-width: 600px) {
-    /* body{
-        background: red;
-    } */
+    
 
  .container{
     width: var(--container-width-sd);
  }
     /* ============= Nav Bar ============ */
-
+    nav{
+        padding: 20px;
+        
+    }
     .nav__menu{
-        right:3%;
+        right:6%;
     }
     /* =========== HEADER ========== */
 
@@ -669,7 +670,7 @@ ul, a{
 
                
     }
-
+    /* ========= Courses ========== */
     .courses__container{
         display: grid;
         grid-template-columns: 1fr;
@@ -677,6 +678,46 @@ ul, a{
         
     }
 
+    section h2{
+        font-size: 150%;
+    }
+    .faqs__container{
+        width: 80%;
+       
+    }
+
+    .faq__box h4{
+        font-size: 70%;
+    }
+
+
+    /* ======== Testimonial ========= */
+    .testimonials__container{
+        width: 80%;
+    }
+    .testimonial__body{
+        width: 80%;
+        margin: 2.5rem;
+    }
+
+    .testimonial__body p{
+        font-size: 60%;
+    }
+
+    /* =========== Footer ============== */
+    .footer__container{
+        width: 80%;
+    }
+
+    .footer__container a,
+    ul, p, h3{
+        font-size: 80%;
+        
+    }
+
+    .copyright{
+        font-size: 70%;
+    }
 
 
 
