@@ -655,9 +655,17 @@ ul, a{
 
 
     /* ======== CATEGORIES ======== */
-   
-    .categories__left p{
+    .categories__container{
+       
+        margin-left: 2rem;
+    }
+    .categories__left{
+        width: 80%;
+        margin-left: 2rem;
+    }
+    .categories__left {
         font-size: 80%;
+        padding-top: 5px;
        
     }
 
@@ -667,8 +675,14 @@ ul, a{
         gap: 0.5rem;
         margin-left: 2rem;
         margin-top: 1rem;
-
                
+    }
+    
+    .categories__right{
+        width: 70%;
+    }
+    .house{
+        width: 80%;
     }
     /* ========= Courses ========== */
     .courses__container{
