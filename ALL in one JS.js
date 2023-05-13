@@ -80,11 +80,14 @@ closeBtn.addEventListener('click', closeNav);
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////practice_3//////////
+/*
 $(document) .ready(funtion (){
     $( '.fa-bars' ) .click(function () {
        $(this). toggleClass( ' fa-times' );
        $( '.navbar' ). toggleClass ('nav-toggle');
      });
  });
- 
+
+
+*/
 

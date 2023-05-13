@@ -224,7 +224,7 @@ header{
     gap: 1rem;
     transition: var(--transition);
     margin-top: 10rem;
-    
+       
 
 }
 
@@ -681,7 +681,7 @@ ul, a{
     
     .categories__right{
         width: 85%;
-        background-color: #00bf8e;
+        
     }
     .house{
         width: 80%;
