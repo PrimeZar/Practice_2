@@ -18,9 +18,10 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.7);
     --color-black: #000;
+    --color-bg1: #383d80;
+    --color-bg2: #7b7ea0;
     --color-bg: #1f2641;
-    --color-bg1: #2e3267;
-    --color-bg2: #424890;
+    --color-bg4: #0f152b; 
 
     --container-width-lg: 80%;
     --container-width-md:90%;
@@ -52,7 +53,9 @@ section{
     width: 100vw;
      
 }
-
+section h1{
+    text-transform: capitalize;
+}
 section h2{
     text-align: center;
     margin-bottom: 4rem;
@@ -64,7 +67,7 @@ h1,h2,h3,h4,h5{
 
 h1{ font-size: 2.4rem;    }
 h2{ font-size: 2.0rem;    } 
-h3{ font-size: 1.6 rem;   }
+h3{ font-size: 1.6rem;    }
 h4{ font-size: 1.3rem;    }
 h5{ font-size: 0.89rem;   }
 
@@ -111,7 +114,8 @@ nav{
     top: 0;
     z-index: 11;  
 }
- .nav__container{
+
+.nav__container{
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -185,9 +189,9 @@ header{
 .categories h1{
     line-height: 2;
 }
-.categories__container{
+.categories__box{
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 40% 60%;
     gap: 2rem;
    
 }
@@ -220,18 +224,17 @@ header{
 .category{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* margin-right: 18rem; */
+    margin-right: 1rem;
     gap: 1rem;
     transition: var(--transition);
     margin-top: 10rem;
-       
 
 }
 
 .house{
-    border-radius: 10%;
-    width: 10rem;
-    height: 20rem;
+    border-radius: 23%;
+    width: 8rem;
+    height: 15rem;
     padding: 1.5em 1rem;
     background-color: rgb(11, 14, 39);
 
@@ -242,7 +245,7 @@ header{
     background: transparent;
 }
 .category__icon{
-    
+    font-size: 1.5rem;
     padding: 3px 3px;
     border-radius: 100%;
     border: 2px solid var(--color-primary);
@@ -279,16 +282,20 @@ header{
 }
 /* ========================= */
 /* ========= COURSE =========== */
-/* .courses{
+
+
+/* 
+.courses{
     background-color: var(--color-bg1);
    
-} */
+}  */
 
 
-.courses__container{
+.courses__box{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    width: fit-content;
 }
 
 .course__info{
@@ -313,12 +320,11 @@ header{
 }
 
 .course-pic img{
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
     padding: 2rem;
-}
+} 
 
-/* ========= FAQS ============ */
+/* ======== FAQS ============ */
 .FAQ{
     background: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgb(145, 231, 145) ;
@@ -447,6 +453,11 @@ header{
 ul, a{
     font-size: small;
     color: #d8d7f5;
+}
+
+.social__links li{
+    display: inline-block;
+    padding: 3px 30px 0 0;
 }
 
 
@@ -722,7 +733,10 @@ ul, a{
 
     /* =========== Footer ============== */
     .footer__container{
-        width: 80%;
+        /* width: 80%; */
+        grid-template-columns: 1fr;
+        text-align: center;
+
     }
 
     .footer__container a,
@@ -730,7 +744,9 @@ ul, a{
         font-size: 80%;
         
     }
-
+    .social__links  li{
+        display: block;
+    }
     .copyright{
         font-size: 70%;
     }
