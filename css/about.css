@@ -133,7 +133,12 @@
     right: 0;
 }
 
+
+
+
+
 @media screen and (max-width:1024px) {
+
     .achievement{
         margin-top: 2rem;
         
@@ -201,5 +206,28 @@
         
     }
 
-   
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

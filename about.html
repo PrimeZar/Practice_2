@@ -69,13 +69,9 @@
                         <p>coureses</p>
                     </article>
                 </div>
-                 
-                
-
                
             </div>
         </div>
-
 
     </section>
 
@@ -287,4 +283,70 @@
     </footer>
 
 
+    
+        
+        <!--====== iconscout link ========-->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        
+        <!--===== JavaScript ==== -->
+        <script src="main.js"></script>
+        
+        <!--===== swiper js link =======-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+                // 1
+            const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            slidesPerView: 1,
+            spaceBetween: 90,
+
+            // when window width is >= 600px
+            breakpoints: {
+            800: { slidesPerView: 2,}
+            },
+
+
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+            el: '.swiper-scrollbar',
+            },
+            });
+
+
+            // //  ========================================================
+
+            //  var swiper = new Swiper('.swiper', {
+            //     slidesPerView: 2,
+            //     spaceBetween: 90,
+            //     pagination: {
+            //         el: " .swiper-pagination", clickable: true,
+                    
+            //     },
+            //     // when window width is >= 600px
+            //     breakpoints: {
+            //         600: { slidesPerView: 1,}
+            //     }
+
+            //   });
+
+        </script>
+
+
+
 </body>
+
