@@ -651,7 +651,7 @@ ul, a{
 
     .header__container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
         text-align: center;
     }
 
@@ -667,8 +667,10 @@ ul, a{
 
 
     /* ======== CATEGORIES ======== */
-    .categories__container{
+    .categories__box{
        margin-left: 2rem;
+       display: grid;
+       grid-template-columns: 1fr;
     }
     
     .categories__left{
