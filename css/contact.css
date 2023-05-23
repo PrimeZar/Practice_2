@@ -1,0 +1,163 @@
+
+.message_box{
+    background:var(--color-bg4);
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 4rem;
+    margin: 7rem auto;
+    height: 30rem;
+
+}
+
+aside{
+    background: var(--color-bg1);
+    padding: 2rem;
+    border-radius: 2rem;
+    bottom: 10rem;
+    position: relative;
+    
+}
+
+aside img{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+aside h2{
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+aside p{
+    font-size: 0.9rem;
+}
+
+/* .contact_details li{
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+
+} */
+
+.icon{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0.2rem;
+}
+
+.contact_details{
+    margin: 2rem auto;
+}
+
+
+h6{
+    font-size: 0.7rem;
+    color: #d8d7f5;
+}
+
+
+.icon i{
+    font-size:1rem;
+    
+}
+.social__icons ul{
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    
+    
+       
+}
+.social__icons li{
+    background: var(--color-bg2);
+    padding: 0.5rem;
+    border-radius: 45%;
+    transition: var(--transition);
+
+}
+
+.social__icons li:hover{
+    background: transparent;
+}
+
+
+
+/* ======== FORM ======== */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form_box{
+    display: flex;
+    gap: 1rem;
+
+}
+.form input[type="text"]{
+    width: 50%;
+
+}
+
+input, textarea{
+    padding: 0.5rem;
+    background: var(--color-bg1);
+    color: white;
+}
+
+.form .btn{
+    width: 50%;
+    border-radius: 5rem;
+}
+
+/* ======== MEDIA ========= */
+@media screen and (max-width: 1024px){
+
+    .message_box{
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+
+    }
+
+    .form{
+        margin-top: 3rem;
+       
+    }
+}
+   
+
+
+
+
+@media screen and (max-width:600px) {
+    
+    .message_box{
+        
+        grid-template-columns: 1fr;
+        margin: 2rem 1.5rem 30rem;
+        padding: 0;
+        gap: 0;
+        
+      
+    }
+
+    .form_box{
+        flex-direction: column;
+        
+    } 
+
+   .form_box input[type="text"]{
+        width: 100%;
+    }
+   .message_info{
+        bottom: 2rem;
+
+    }
+
+    .message{
+        margin-bottom: 8rem;
+    }
+}

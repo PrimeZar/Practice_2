@@ -455,11 +455,18 @@ ul, a{
     color: #d8d7f5;
 }
 
-.social__links li{
+/* .social__links li{
     display: inline-block;
     padding: 3px 30px 0 0;
-}
+    font-size: 1.2rem;
 
+} */
+
+.social__links ul{
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+} 
 
 .copyright{
     text-align: center;
@@ -746,15 +753,20 @@ ul, a{
         font-size: 80%;
         
     }
-    .social__links  li{
-        display: block;
-    }
+    
     .copyright{
         font-size: 70%;
     }
 
+    .social__links{
+        display: flex;
+        justify-content: center;
+          
+    }
 
 
+
+    
 }    
 
 
